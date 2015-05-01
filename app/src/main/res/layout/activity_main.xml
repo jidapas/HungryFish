@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main"
+    android:id="@+id/mainscreenlayout"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hungry Fish!"
+        android:id="@+id/hungryfish"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="48sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:id="@+id/button"
+        android:layout_marginBottom="144dp"
+        android:textSize="36sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:minWidth="300dp"
+        android:onClick="sendMessage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HIGH SCORES"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:textSize="36sp"
+        android:minWidth="300dp"
+        android:onClick="goToScores"/>
+
+</RelativeLayout>
